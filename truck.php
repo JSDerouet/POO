@@ -11,7 +11,7 @@ class Truck extends Vehicule {
         $this->energy = $energy;
     }
 
-    public function full(): boolean{
+    public function full(int $charge, int $stockage): string{
         if ($charge < $stockage){
             return 'in filling';
         } elseif ($charge = $stockage){
