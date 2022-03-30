@@ -1,22 +1,11 @@
 <?php
 
 require_once 'bycicle.php';
-$bike = new Bycicle('blue');
-var_dump ($bike);
-$bike->setCurrentSpeed (0);
-var_dump($bike);
+$bicycle = new Bycicle('blue', 1);
 
-echo $bike->forward();
-echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed . ' km/h' . '<br>';
-echo $bike->brake();
-echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed . ' km/h' . '<br>';
-echo $bike->brake();
+echo $bicycle->forward();
 
-$rockrider = new Bicycle('yellow');
-
-$tornado = new Bicycle('black');
-
-$tornado->forward();
+var_dump($bicycle);
 
 require_once 'car.php';
 $hommersPinkSedan = new Car('pink', 4, 'diesel');
